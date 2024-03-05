@@ -1,0 +1,144 @@
+\documentclass[aspectratio = 43]{beamer}
+\usetheme{AnnArbor}
+% set captions with numbers
+\setbeamertemplate{caption}[numbered]
+
+
+\usepackage{amsmath, nccmath}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\definecolor{halfgray}{gray}{0.7}
+
+\usecolortheme{whale}
+\setbeamercolor{frametitle}{parent=structure,bg=halfgray}
+
+% Include other packages here, before hyperref.
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg}
+\graphicspath{{Figures/}} %Where the figures folder is located
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{pgffor}
+\usepackage{listings}
+\usepackage[%font=bf,
+skip=0pt]{caption}
+
+\captionsetup[lstlisting]{font={tiny,tt}}
+\setbeamerfont{caption}{size=\tiny}
+%\setlength\abovecaptionskip{-1pt}
+\usepackage{pythonhighlight}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{%
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=1pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+}
+
+\lstset{style=mystyle}
+%\usepackage{python}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Revue de Projet}
+\subtitle{Classification et Comptage de contenants vides}
+\author[]{\tiny Thomas CHECCHIN $-$ Dorian CHEVALIERAS $-$ Nicolas TO VAN
+  TRANG $-$ Zaïd GHALI}
+\institute[]{\textbf{Télécom Physique Strasbourg}\\
+\textbf{SEW - Usocome}}
+\date{\tiny \today}
+
+
+\begin{document}
+
+%%%%--1--%%%%
+\begin{frame}
+  \begin{minipage}[t][0.2\textheight][t]{\textwidth}
+    \centering
+    \includegraphics[scale=0.3,width=0.2\textwidth]{tps-logo.png}
+    \label{fig:tps_logo}
+    \hspace*{4cm}
+    \includegraphics[scale=0.3,width=0.2\textwidth]{SEW_logo.jpg}
+    \label{fig:sew_logo}
+  \end{minipage}
+  \titlepage%
+\end{frame}
+%%%% --2--%%%%
+\begin{frame}
+  \frametitle{Plan}
+  \tableofcontents
+\end{frame}
+%
+% %%%%--3--%%%%
+\section{Remise en contexte}
+\begin{frame}
+  \frametitle{Remise en contexte}
+  \begin{itemize}
+  \item Présentation entreprise
+  \item Etat actuel
+  \end{itemize}
+\end{frame}
+%
+% %%%% --4--%%%%
+\section{Prévision des tâches à réaliser}
+\begin{frame}
+  \frametitle{Prévision des tâches à réaliser}
+  \begin{itemize}
+  \item Présentation du cahier des charges + type de caméra envisagé
+    donc budgets ?
+  \item Diagramme de Gantt sur l'entièreté du projet
+  \item Diagramme de Gantt prévisionnel avant le R1 et diagramme réel
+  \end{itemize}
+\end{frame}
+%
+% %%%% --5--%%%%
+\section{Etat de l'art}
+\begin{frame}
+  \frametitle{Remise en contexte}
+  \begin{itemize}
+  \item rfid (trop cher)
+  \item vision (contours des boîtes)
+  \item Plus important : YOLO mais d'autres existent mais moins
+    utilisés comme \textit{SDD ?}
+  \end{itemize}
+\end{frame}
+%
+% %%%% --6--%%%%
+\section{Pistes de solutions}
+\begin{frame}
+  \frametitle{Pistes de solutions}
+  \begin{itemize}
+  \item Pour les zones de production : comptage après identification
+    des boîtes vide ou non en ayant ou non définit quel type de boîte
+  \item Pour la zone de stockage : utilisation des zones stratégiques
+    de passages pour une meilleure classification et s'affranchir des
+    risques d'identification des boîtes cachées
+  \end{itemize}
+\end{frame}
+%
+% %%%% --7--%%%%
+\section{Conclusion}
+\begin{frame}
+  \frametitle{Conclusion}
+  Poursuite du PI ?
+\end{frame}
+\end{document}
