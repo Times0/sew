@@ -5,6 +5,7 @@
 
 
 \usepackage{amsmath, nccmath}
+\usepackage{multirow}
 \usepackage[french]{babel}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
@@ -88,14 +89,83 @@ skip=0pt]{caption}
   \tableofcontents
 \end{frame}
 %
-% %%%%--3--%%%%
+% %%%% --3--%%%%
+% \begin{itemize}
+% \item Présentation entreprise
+% \item Etat actuel
+% \end{itemize}
 \section{Remise en contexte}
+\subsection{Présentation de l'entreprise}
 \begin{frame}
-  \frametitle{Remise en contexte}
+  \frametitle{Présentation de l'entreprise}
+  \textbf{SEW Usocome}
+
+  \begin{minipage}{.5\textwidth}
   \begin{itemize}
-  \item Présentation entreprise
-  \item Etat actuel
+  \item filiale française du groupe allemand \textbf{SEW-EURODRIVE}
+  \item usines à Haguenau, Brumath et Forbach
+  \item propose des solutions d'automatisme pour des applications de
+    mouvement (moteur électrique, servomoteur..)
   \end{itemize}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=1,width=0.9\textwidth]{sew_haguenau.jpg}
+    \caption{Vue de l'usine de Haguenau}
+    \label{fig:sew_haguenau}
+  \end{figure}
+\end{minipage}
+\end{frame}
+%
+% %%%% --4--%%%%
+\subsection{Etat actuel}
+\begin{frame}
+  \frametitle{Etat actuel}
+
+  Gestion des stocks inexistantes entre les zones de production et de
+  stockage et les autres usines.
+
+  \textbf{Problématique~:} Avoir constamment des contenants vides sur
+  les zones de production et suffisamment de contenants utiles à la
+  production sur chaque site
+
+  \begin{minipage}{.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.7\textwidth, height=0.47\textheight]{sew_production.jpg}
+      \caption{Image d'une zone de production d'Haguenau}
+      \label{fig:sew_production}
+    \end{figure}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[scale=1,width=0.9\textwidth]{sew_entrepot.jpg}
+      \caption{Image de la zone de stockage de Haguenau}
+      \label{fig:sew_entrepot}
+    \end{figure}
+  \end{minipage}
+\end{frame}%
+%
+% %%% --5--%%%
+\subsection{Objectifs du projet}
+\begin{frame}
+  \frametitle{Objectifs du projet}
+  \textbf{Objectif principal~:} Classification et comptage des
+  contenants vides
+
+  % \begin{tabular}{|p{1ex}|p{1ex}|p{1ex}|}
+  %   \hline
+  %   Objectifs & Critères & Moyens\\
+  %   \hline
+  %   Classification des boîtes par apprentissage automatique & Avoir
+  %                                                             environ
+  %                                                             90  de
+  %                                                             précision
+  %                        & Utiliser Python et YOLO\\
+  %   \hline
+  % \end{tabular}
 \end{frame}
 %
 % %%%% --4--%%%%
@@ -136,9 +206,18 @@ skip=0pt]{caption}
 \end{frame}
 %
 % %%%% --7--%%%%
-\section{Conclusion}
+%\section{Conclusion}
 \begin{frame}
   \frametitle{Conclusion}
   Poursuite du PI ?
 \end{frame}
+% %%%% --7--%%%%
+\begin{frame}
+  \frametitle{Bibliographie}
+  Faire un bibtex avec au moins~:
+  \begin{itemize}
+  \item SEW usocome site \textit{usocome.com}
+  \end{itemize}
+\end{frame}
 \end{document}
+%
