@@ -1,0 +1,28 @@
+@article{ziou:inria-00098446,
+  TITLE = {{Edge Detection Techniques-An Overview}},
+  AUTHOR = {Ziou, Djemel and Tabbone, Salvatore},
+  URL = {https://inria.hal.science/inria-00098446},
+  NOTE = {Article dans revue scientifique avec comit{\'e} de lecture.},
+  JOURNAL = {{Распознавание образов и анализ изображе\&\#1085 / Pattern Recognition and Image Analysis: Advances in Mathematical Theory and Applications}},
+  HAL_LOCAL_REFERENCE = {98-R-210 || ziou98a},
+  PUBLISHER = {{MAIK Nauka/Interperiodica (МАИК Наука/Интерпериодика)}},
+  VOLUME = {8},
+  NUMBER = {4},
+  PAGES = {537-559},
+  YEAR = {1998},
+  KEYWORDS = {edge detection ; image processing ; traitement d'images ; detection de contours},
+  PDF = {https://inria.hal.science/inria-00098446/file/Ziou1998.pdf},
+  HAL_ID = {inria-00098446},
+  HAL_VERSION = {v1},
+}
+
+Resultats pour etat de l'art:
+- Erreurs de détéctions (décalages, ratés, sortis de nul part) -> casse toute la suite (detection des objets)
+- Les évaluations c'est à l'oeil (c'est pas trop un problème)
+- Implémentation assez compliquée (florilège de sous-sous méthodes, algos pas tous dispo open source, techniques pas forcément simples à adapter à nos problèmes)
+- Perte d'info (à cause des filtres, effet de bords, approximations) -> pas mal d'influence sur détéction d'objets proches
+"Differentiation is an ill-conditioned problem and smoothing results in a loss of information" (abstract)
+"However, they give different results in the case of several edges which are close to each other" p18
+- sensible au bruit (intro: "image derivatives are sensitive to various sources of noise") la partie "derivative" c'est une étape obligée (c'est le plus important...) donc même avec des étapes de lissage il y a un impacte.
+
+'pas dans le fichier mais logique) -> problèmes occlusion (il faut bien voir les bords)

@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'presentation_R1.blg'
+[165] biber-MSWIN64:340> INFO - === 
+[212] Biber.pm:419> INFO - Reading 'presentation_R1.bcf'
+[373] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[394] bbl.pm:660> INFO - Writing 'presentation_R1.bbl' with encoding 'latin1'
+[394] bbl.pm:763> INFO - Output to presentation_R1.bbl
+[394] Biber.pm:131> WARN - The file 'presentation_R1.bcf' does not contain any citations!
+[394] Biber.pm:133> INFO - WARNINGS: 1
