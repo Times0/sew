@@ -5,4 +5,8 @@
 *.toc
 *.nav
 *.snm
+*.pdf
+*.bcf
+*.dvi
+*.blg
 .DS_Store

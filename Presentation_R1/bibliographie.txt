@@ -26,3 +26,11 @@ Resultats pour etat de l'art:
 - sensible au bruit (intro: "image derivatives are sensitive to various sources of noise") la partie "derivative" c'est une étape obligée (c'est le plus important...) donc même avec des étapes de lissage il y a un impacte.
 
 'pas dans le fichier mais logique) -> problèmes occlusion (il faut bien voir les bords)
+
+
+@article{wang2024yolov9,
+  title={{YOLOv9}: Learning What You Want to Learn Using Programmable Gradient Information},
+  author={Wang, Chien-Yao  and Liao, Hong-Yuan Mark},
+  booktitle={arXiv preprint arXiv:2402.13616},
+  year={2024}
+}

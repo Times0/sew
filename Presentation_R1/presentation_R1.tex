@@ -9,11 +9,11 @@
 \usepackage[french]{babel}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{biblatex}
+\usepackage[backend=biber]{biblatex}
 \addbibresource{biblio.bib}
 
 
-\definecolor{halfgray}{gray}{0.7}
+\definecolor{halfgray}{gray}{0.8}
 
 \usecolortheme{whale}
 \setbeamercolor{frametitle}{parent=structure,bg=halfgray}
@@ -26,7 +26,7 @@
 \usepackage{pgffor}
 \usepackage{listings}
 \usepackage[%font=bf,
-skip=0pt]{caption}
+skip=3pt]{caption}
 
 \captionsetup[lstlisting]{font={tiny,tt}}
 \setbeamerfont{caption}{size=\tiny}
@@ -145,6 +145,14 @@ skip=0pt]{caption}
 % %%%% --7--%%%%
 \begin{frame}
   \frametitle{Bibliographie}
+  Pour print la biblio il faut utiliser les refs comme ceci
+  \citeauthor{bib:ziou}. Pour actualiser la biblio~:
+  \begin{itemize}
+  \item pdflatex presentation\_R1.tex
+  \item biber presentation\_R1
+  \item pdflatex presentation\_R1.tex
+  \end{itemize}
+
   \printbibliography
   Faire un bibtex avec au moins~:
   \begin{itemize}

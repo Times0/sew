@@ -51,7 +51,6 @@
     \end{figure}
   \end{minipage}
 \end{frame}%
-%
 % %%% --5--%%%
 \subsection{Objectifs du projet}
 \begin{frame}
@@ -59,16 +58,37 @@
   \textbf{Objectif principal~:} Classification et comptage des
   contenants vides
 
-  % \begin{tabular}{|p{1ex}|p{1ex}|p{1ex}|}
-  %   \hline
-  %   Objectifs & Critères & Moyens\\
-  %   \hline
-  %   Classification des boîtes par apprentissage automatique & Avoir
-  %                                                             environ
-  %                                                             90  de
-  %                                                             précision
-  %                        & Utiliser Python et YOLO\\
-  %   \hline
-  % \end{tabular}
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{|p{3cm}|p{4cm}|p{3cm}|}
+      \hline
+      Objectifs & Critères & Moyens \\
+      \hline
+      Acquisition de données numériques & 1. Avoir assez d'images des
+                                          différentes boîtes réparties homogènement & Utilisation de caméras IP \\
+                & 2. Acquisition dans nos locaux et à SEW & \\
+      \hline
+      Classification des types de boîtes par apprentissage automatique &
+                                                                Classification
+                                                                des images avec
+                                                                environ
+                                                                90 \% de précision & Utiliser Python et YOLO \\
+      \hline
+      Classification des boîtes vides ou non par apprentissage automatique
+                & Déterminer si les boîtes sont vides ou non avec une
+                  précision tout autant élevée 90 \% & Utiliser Python
+                                                       et YOLO\\
+      \hline
+      Compter le nombre de boîtes & 1. Compter celles vides par types
+                                    précédemment identifiées &\\
+                & 2. Prendre en compte les boîtes cachées &\\
+      \hline
+      Utilisation et explicabilité du logiciel & 1. Rendre le logiciel
+                                                 utilisable et compréhensible & Installation
+                                                                                finale et contrôle du logiciel\\
+                & 2. Possibilité de changer les types de boîtes & \\ %rajout de boîtes par exemple
+      \hline
+    \end{tabular}
+  \end{center}
 \end{frame}
-%
+%%
