@@ -1,3 +1,5 @@
+EDGE Methods
+
 @article{ziou:inria-00098446,
   TITLE = {{Edge Detection Techniques-An Overview}},
   AUTHOR = {Ziou, Djemel and Tabbone, Salvatore},
@@ -26,3 +28,13 @@ Resultats pour etat de l'art:
 - sensible au bruit (intro: "image derivatives are sensitive to various sources of noise") la partie "derivative" c'est une étape obligée (c'est le plus important...) donc même avec des étapes de lissage il y a un impacte.
 
 'pas dans le fichier mais logique) -> problèmes occlusion (il faut bien voir les bords)
+
+
+Threshold Methods:
+
+https://images.icube.unistra.fr/index.php/Fichier:3-Segmentation.pdf
+
+- Sensible au bruits (solution par certains filtres)
+- Sensible aux différences de limunosité -> nécéssite correction avant exploitation
+- pas d'algo explicite dispo
+- pas d'application pour compter des objets empilés
