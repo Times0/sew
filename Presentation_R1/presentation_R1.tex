@@ -1,3 +1,4 @@
+% -*- coding: utf-8 -*-
 \documentclass[aspectratio = 43]{beamer}
 \usetheme{AnnArbor}
 % set captions with numbers
@@ -6,8 +7,8 @@
 
 \usepackage{amsmath, nccmath}
 \usepackage{multirow}
+\usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
-\usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[backend=biber]{biblatex}
 \addbibresource{biblio.bib}
@@ -65,8 +66,8 @@ skip=3pt]{caption}
 \title{Revue de Projet}
 \subtitle{Classification et Comptage de contenants vides}
 \author[]{\tiny Thomas CHECCHIN $-$ Dorian CHEVALERIAS $-$ Nicolas TO VAN
-  TRANG $-$ Zaïd GHALI}
-\institute[]{\textbf{Télécom Physique Strasbourg}\\
+  TRANG $-$ Za{\"\i}d GHALI}
+\institute[]{\textbf{T{\'e}l{\'e}com Physique Strasbourg}\\
 \textbf{SEW - Usocome}}
 \date{\tiny \today}
 
@@ -93,22 +94,34 @@ skip=3pt]{caption}
 %
 % %%%% --3--%%%%
 % \begin{itemize}
-% \item Présentation entreprise
+% \item Pr{\'e}sentation entreprise
 % \item Etat actuel
 % \end{itemize}
 
 \input{Parties/contexte.tex}
 
 % %%%% --4--%%%%
-\section{Prévision des tâches à réaliser}
+\section{Pr{\'eutf}vision des t{\^a}ches {\`a} r{\'e}aliser}
 \begin{frame}
-  \frametitle{Prévision des tâches à réaliser}
+  \frametitle{Pr{\'e}vision des t{\^a}ches {\`a} r{\'e}aliser}
   \begin{itemize}
-  \item Présentation du cahier des charges + type de caméra envisagé
+  \item Pr{\'e}sentation du cahier des charges + type de cam{\'e}ra envisag{\'e}
     donc budgets ?
-  \item Diagramme de Gantt sur l'entièreté du projet
-  \item Diagramme de Gantt prévisionnel avant le R1 et diagramme effective
+  \item Diagramme de Gantt sur l'enti{\`e}ret{\'e} du projet
+  \item Diagramme de Gantt pr{\'e}visionnel avant le R1 et diagramme effective
   \end{itemize}
+\end{frame}
+%
+\section{Pr{\'eutf}vision des t{\^a}ches {\`a} r{\'e}aliser}
+\begin{frame}
+  \frametitle{Pr{\'e}vision des t{\^a}ches {\`a} r{\'e}aliser}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=1,width=0.9\textwidth]{gantt_r1.png}
+    \caption{Diagramme de Gantt prÃ©visionnel (en haut) et effectif (en
+      bas) du projet avant la premiÃ¨re revue}
+    \label{fig:gantt_r1}
+  \end{figure}
 \end{frame}
 %
 % %%%% --5--%%%%
@@ -117,9 +130,9 @@ skip=3pt]{caption}
   \frametitle{Remise en contexte}
   \begin{itemize}
   \item rfid (trop cher)
-  \item vision (contours des boîtes)
+  \item vision (contours des bo{\^\i}tes)
   \item Plus important : YOLO mais d'autres existent mais moins
-    utilisés comme \textit{SDD ?}
+    utilis{\'e}s comme \textit{SDD ?}
   \end{itemize}
 \end{frame}
 %
@@ -128,11 +141,11 @@ skip=3pt]{caption}
 \begin{frame}
   \frametitle{Pistes de solutions}
   \begin{itemize}
-  \item Pour les zones de production : comptage après identification
-    des boîtes vide ou non en ayant ou non définit quel type de boîte
-  \item Pour la zone de stockage : utilisation des zones stratégiques
+  \item Pour les zones de production : comptage apr{\`e}s identification
+    des bo{\^\i}tes vide ou non en ayant ou non d{\'e}finit quel type de bo{\^\i}te
+  \item Pour la zone de stockage : utilisation des zones strat{\'e}giques
     de passages pour une meilleure classification et s'affranchir des
-    risques d'identification des boîtes cachées
+    risques d'identification des bo{\^\i}tes cach{\'e}es
   \end{itemize}
 \end{frame}
 %
