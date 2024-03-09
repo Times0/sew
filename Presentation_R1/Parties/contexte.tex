@@ -4,6 +4,7 @@
 \begin{frame}
   \frametitle{Pr{\'e}sentation de l'entreprise}
   \textbf{SEW Usocome}
+  \vspace{4ex}
 
   \begin{minipage}{.5\textwidth}
   \begin{itemize}
@@ -17,7 +18,7 @@
   \begin{figure}
     \centering
     \includegraphics[scale=1,width=0.9\textwidth]{sew_haguenau.jpg}
-    \caption{Vue de l'usine de Haguenau}
+    \caption{Vue de l'usine de Haguenau}%
     \label{fig:sew_haguenau}
   \end{figure}
 \end{minipage}
@@ -39,7 +40,7 @@
     \begin{figure}
       \centering
       \includegraphics[width=0.7\textwidth, height=0.47\textheight]{sew_production.jpg}
-      \caption{Image d'une zone de production d'Haguenau}
+      \caption{Image d'une zone de production d'Haguenau}%
       \label{fig:sew_production}
     \end{figure}
   \end{minipage}%
@@ -47,7 +48,7 @@
     \begin{figure}
       \centering
       \includegraphics[scale=1,width=0.9\textwidth]{sew_entrepot.jpg}
-      \caption{Image de la zone de stockage de Haguenau}
+      \caption{Image de la zone de stockage de Haguenau}%
       \label{fig:sew_entrepot}
     \end{figure}
   \end{minipage}
@@ -61,32 +62,35 @@
 
   \begin{center}
     \scriptsize
-    \begin{tabular}{|p{3cm}|p{4cm}|p{3cm}|}
+    \begin{tabular}{|p{3cm}|p{4.5cm}|p{3cm}|}
       \hline
       Objectifs & Crit{\`e}res & Moyens \\
       \hline
       Acquisition de donn{\'e}es num{\'e}riques & 1. Avoir assez d'images des
-                                          diff{\'e}rentes bo{\^\i}tes r{\'e}parties homog{\`e}nement & Utilisation de cam{\'e}ras IP \\
+                                                  diff{\'e}rentes bo{\^\i}tes
+                                                  r{\'e}parties
+                                                  homog{\`e}nement &
+                                                                     Utilisation de cam{\'e}ras IP \\
                 & 2. Acquisition dans nos locaux et {\`a} SEW & \\
       \hline
       Classification des types de bo{\^\i}tes par apprentissage automatique &
-                                                                Classification
-                                                                des images avec
-                                                                environ
-                                                                90 \% de pr{\'e}cision & Utiliser Python et YOLO \\
+                                                                              Classification
+                                                                              des images avec
+                                                                              environ
+                                                                              90 \% de pr{\'e}cision & Utiliser Python et YOLO \\
       \hline
       Classification des bo{\^\i}tes vides ou non par apprentissage automatique
                 & D{\'e}terminer si les bo{\^\i}tes sont vides ou non avec une
                   pr{\'e}cision tout autant {\'e}lev{\'e}e 90 \% & Utiliser Python
-                                                       et YOLO\\
+                                                                   et YOLO\\
       \hline
       Compter le nombre de bo{\^\i}tes & 1. Compter celles vides par types
-                                    pr{\'e}c{\'e}demment identifi{\'e}es &\\
+                                         pr{\'e}c{\'e}demment identifi{\'e}es &\\
                 & 2. Prendre en compte les bo{\^\i}tes cach{\'e}es &\\
       \hline
       Utilisation et explicabilit{\'e} du logiciel & 1. Rendre le logiciel
-                                                 utilisable et compr{\'e}hensible & Installation
-                                                                                finale et contr{\^o}le du logiciel\\
+                                                     utilisable et compr{\'e}hensible & Installation
+                                                                                        finale et contr{\^o}le du logiciel\\
                 & 2. Possibilit{\'e} de changer les types de bo{\^\i}tes & \\ %rajout de bo{\^\i}tes par exemple
       \hline
     \end{tabular}
