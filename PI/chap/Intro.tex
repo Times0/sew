@@ -2,26 +2,88 @@
 
 \subsection{Objectif du document}
 
-Le présent document vise à définir les exigences et les spécifications pour le développement d'un système de gestion innovant des contenants réutilisables de l'entreprise \emph{SEW-Usocome}. Ce système sera conçu pour répondre aux besoins spécifiques de l'entreprise en matière de gestion efficace des bacs plastiques et des caisses métalliques utilisés pour le stockage et le transport des pièces usinées dans ses usines.
+Le présent document vise à définir les exigences et les spécifications
+pour le développement d'un système de gestion innovant des contenants
+réutilisables de l'entreprise \emph{SEW-Usocome}. Ce système sera
+conçu pour répondre aux besoins spécifiques de l'entreprise en matière
+de gestion efficace des bacs plastiques et des caisses métalliques
+utilisés pour le stockage et le transport des pièces usinées dans ses
+usines.
+
+\subsection{Présentation de l'entreprise}
+
+\textbf{SEW-Usocome} est la branche française de l'entreprise
+familiale allemande \textbf{SEW-Eurodrive}. Elle est spécialisée dans
+la fabrication de systèmes d'entraînement et d'automatisation. En
+France, elle possède plusieurs entrepôts, dont la principale à
+Haguenau correspond aussi au siège sociale. Les deux autres sont
+situés à Bromath et à Forbach. Ces entrepôts servent à stocker les
+pièces détachées, les composants et les produits finis destinés à être
+distribués aux différents clients et à assurer un approvisionnement
+efficace des différents sites de production et des centres de
+distribution.
 
 \subsection{Contexte}
 
-La logistique de gestion des contenants réutilisables constitue un défi majeur dans le domaine industriel, en particulier pour les entreprises opérant sur plusieurs sites de production et d'assemblage. La répartition optimale des bacs plastiques entre ces sites, ainsi que la surveillance des points relais disséminés dans les usines, sont des éléments clés pour garantir une efficacité opérationnelle maximale tout en minimisant les coûts.\\
+La logistique de gestion des contenants réutilisables constitue un
+défi majeur dans le domaine industriel, en particulier pour les
+entreprises opérant sur plusieurs sites de production et
+d'assemblage. La répartition optimale des bacs plastiques entre ces
+sites, ainsi que la surveillance des points relais disséminés dans les
+usines, sont des éléments clés pour garantir une efficacité
+opérationnelle maximale tout en minimisant les coûts.
 
-Dans ce contexte, \emph{SEW-Usocome} se trouve confrontée à des défis logistiques spécifiques, notamment la gestion du stock global de bacs entre ses sites de production et d'assemblage, ainsi que la surveillance des points relais appelées "gares" pour assurer un approvisionnement constant en bacs vides et éviter toute obstruction causée par les caisses pleines.\\
 
-Les équipes logistiques de l'entreprise doivent actuellement gérer un volume de plus de 100 000 bacs et caisses, comprenant entre 6 et 8 catégories différentes. Ces contenants circulent entre trois sites de production et d'assemblage, transportés par camions. Cette gestion nécessite une organisation efficace pour assurer le flux continu de ces contenants essentiels à la chaîne de production\\
+Dans ce contexte, \emph{SEW-Usocome} se trouve confrontée à des défis
+logistiques spécifiques, notamment la gestion du stock global de bacs
+entre ses sites de production et d'assemblage, ainsi que la
+surveillance des points relais appelées "gares" pour assurer un
+approvisionnement constant en bacs vides et éviter toute obstruction
+causée par les caisses pleines.
 
-À l'heure actuelle, la logistique de l'entreprise fonctionne principalement grâce à des processus manuels et à des systèmes de suivi rudimentaires pour la gestion des bacs et des caisses réutilisables. Les équipes logistiques sont chargées d'effectuer des comptages réguliers et des vérifications physiques pour garantir que les stocks de contenants sont suffisants et que leur répartition entre les différents sites est équilibrée.\\
 
-Ce mode de fonctionnement offre une solution modérée pour la gestion des stocks, mais il est occasionnellement confronté à des problèmes de "famine" de contenants, entraînant des situations d'urgence nécessitant un réapprovisionnement immédiat. Ces interruptions peuvent avoir un impact négatif sur les opérations quotidiennes de l'usine, entraînant des retards de production.
+Les équipes logistiques de l'entreprise doivent actuellement gérer un
+volume de plus de 100 000 bacs et caisses, comprenant entre 6 et 8
+catégories différentes. Ces contenants circulent entre trois sites de
+production et d'assemblage, transportés par camions. Cette gestion
+nécessite une organisation efficace pour assurer le flux continu de
+ces contenants essentiels à la chaîne de production
+
+
+À l'heure actuelle, la logistique de l'entreprise fonctionne
+principalement grâce à des processus manuels et à des systèmes de
+suivi rudimentaires pour la gestion des bacs et des caisses
+réutilisables. Les équipes logistiques sont chargées d'effectuer des
+comptages réguliers et des vérifications physiques pour garantir que
+les stocks de contenants sont suffisants et que leur répartition entre
+les différents sites est équilibrée.
+
+
+Ce mode de fonctionnement offre une solution modérée pour la gestion
+des stocks, mais il est occasionnellement confronté à des problèmes de
+"famine" de contenants, entraînant des situations d'urgence
+nécessitant un réapprovisionnement immédiat. Ces interruptions peuvent
+avoir un impact négatif sur les opérations quotidiennes de l'usine,
+entraînant des retards de production.
 
 \subsection{Définitions}
 
-Avant de procéder à la description détaillée du projet, quelques termes clés méritent d'être définis pour une meilleure compréhension :\\
+Avant de procéder à la description détaillée du projet, quelques termes clés méritent d'être définis pour une meilleure compréhension~:\\
 
 \begin{itemize}
-    \item[$\bullet$] \textbf{Contenants Réutilisables :} Il s'agit des bacs plastiques et des caisses métalliques utilisés pour le stockage et le transport des pièces usinées dans l'usine.
-    \item[$\bullet$] \textbf{Points Relais / gares :} Des emplacements disséminés dans les usines où les contenants réutilisables sont stockés temporairement pour un accès facile.
-    \item[$\bullet$] \textbf{Gestion Logistique :} L'ensemble des activités visant à planifier, mettre en œuvre et contrôler le flux de produits et d'informations tout au long de la chaîne d'approvisionnement.\\
+\item[$\bullet$] \textbf{Contenants réutilisables :} Il s'agit des
+  bacs plastiques et des caisses métalliques utilisés pour le stockage
+  et le transport des pièces usinées dans l'usine.
+\item[$\bullet$] \textbf{Points relais / gares :} Des emplacements
+  disséminés dans les usines où les contenants réutilisables sont
+  stockés temporairement pour un accès facile principalement proche
+  des machines de production, d'assemblage de pièces.
+\item[$\bullet$] \textbf{Roll :} Un chariot sur quatre roulettes
+  permettant d'empiler un type de contenant. Dans l'entreprise, chaque
+  roll contient un seul type de contenants. En fonction des types, le
+  nombre est fixe.
+\item[$\bullet$] \textbf{Gestion logistique :} L'ensemble des
+  activités visant à planifier, mettre en œuvre et contrôler le flux
+  de produits et d'informations tout au long de la chaîne
+  d'approvisionnement.
 \end{itemize}
