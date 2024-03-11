@@ -47,3 +47,9 @@ https://images.icube.unistra.fr/index.php/Fichier:3-Segmentation.pdf
 - Sensible aux différences de limunosité -> nécéssite correction avant exploitation
 - pas d'algo explicite dispo
 - pas d'application pour compter des objets empilés
+
+corelation Methods :
+https://gjkoplik.github.io/normalized_cross_correlation/
+cross corelation -> pour le tracking de mouvement/objets
+"Can We Perform Well Over Multiple Images?" -> "substantial amount of calibration required"/" fail to generalize in many cases"
+fully interpretable
