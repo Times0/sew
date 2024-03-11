@@ -6,7 +6,7 @@
 
 
 \usepackage{amsmath, nccmath}
-\usepackage{multirow}
+\usepackage{booktabs}
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
@@ -68,7 +68,7 @@ skip=3pt]{caption}
 \author[]{\tiny Thomas CHECCHIN $-$ Dorian CHEVALERIAS $-$ Nicolas TO VAN
   TRANG $-$ Za{\"\i}d GHALI}
 \institute[]{\textbf{T{\'e}l{\'e}com Physique Strasbourg}\\
-\textbf{SEW - Usocome}}
+  \textbf{SEW \-{} Usocome}}
 \date{\tiny \today}
 
 
@@ -78,10 +78,10 @@ skip=3pt]{caption}
 \begin{frame}
   \begin{minipage}[t][0.2\textheight][t]{\textwidth}
     \centering
-    \includegraphics[scale=0.3,width=0.2\textwidth]{tps-logo.png}
+    \includegraphics[scale=0.3,width=0.2\textwidth]{tps-logo.png}%
     \label{fig:tps_logo}
     \hspace*{4cm}
-    \includegraphics[scale=0.3,width=0.2\textwidth]{SEW_logo.jpg}
+    \includegraphics[scale=0.3,width=0.2\textwidth]{SEW_logo.jpg}%
     \label{fig:sew_logo}
   \end{minipage}
   \titlepage%
@@ -101,25 +101,26 @@ skip=3pt]{caption}
 \input{Parties/contexte.tex}
 
 % %%%% --4--%%%%
-\section{Pr{\'eutf}vision des t{\^a}ches {\`a} r{\'e}aliser}
+\section{Pr{\'e}vision des t{\^a}ches {\`a} r{\'e}aliser}
+\subsection{Cahier des charges}
 \begin{frame}
   \frametitle{Pr{\'e}vision des t{\^a}ches {\`a} r{\'e}aliser}
   \begin{itemize}
   \item Pr{\'e}sentation du cahier des charges + type de cam{\'e}ra envisag{\'e}
-    donc budgets ?
+    donc budgets~?
   \item Diagramme de Gantt sur l'enti{\`e}ret{\'e} du projet
   \item Diagramme de Gantt pr{\'e}visionnel avant le R1 et diagramme effective
   \end{itemize}
 \end{frame}
 %
-\section{Pr{\'eutf}vision des t{\^a}ches {\`a} r{\'e}aliser}
+\subsection{Pr{\'e}vision des t{\^a}ches {\`a} r{\'e}aliser}
 \begin{frame}
   \frametitle{Pr{\'e}vision des t{\^a}ches {\`a} r{\'e}aliser}
   \begin{figure}
     \centering
-    \includegraphics[scale=1,width=0.9\textwidth]{gantt_r1.png}
+    \includegraphics[width=0.9\textwidth, height=0.7\textheight]{gantt_r1.png}
     \caption{Diagramme de Gantt prévisionnel (en haut) et effectif (en
-      bas) du projet avant la première revue}
+      bas) du projet avant la première revue}%
     \label{fig:gantt_r1}
   \end{figure}
 \end{frame}
@@ -141,9 +142,9 @@ skip=3pt]{caption}
 \begin{frame}
   \frametitle{Pistes de solutions}
   \begin{itemize}
-  \item Pour les zones de production : comptage apr{\`e}s identification
+  \item Pour les zones de production~: comptage apr{\`e}s identification
     des bo{\^\i}tes vide ou non en ayant ou non d{\'e}finit quel type de bo{\^\i}te
-  \item Pour la zone de stockage : utilisation des zones strat{\'e}giques
+  \item Pour la zone de stockage~: utilisation des zones strat{\'e}giques
     de passages pour une meilleure classification et s'affranchir des
     risques d'identification des bo{\^\i}tes cach{\'e}es
   \end{itemize}
@@ -153,7 +154,7 @@ skip=3pt]{caption}
 %\section{Conclusion}
 \begin{frame}
   \frametitle{Conclusion}
-  Poursuite du PI ?
+  Poursuite du PI~?
 \end{frame}
 % %%%% --7--%%%%
 \begin{frame}
@@ -166,8 +167,8 @@ skip=3pt]{caption}
   \item pdflatex presentation\_R1.tex
   \end{itemize}
 
-  \printbibliography
-  Faire un bibtex avec au moins~:
+  \printbibliography%
+
   \begin{itemize}
   \item SEW usocome site \textit{usocome.com}
   \end{itemize}
