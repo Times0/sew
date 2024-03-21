@@ -9,3 +9,4 @@
 *.dvi
 *.blg
 .DS_Store
+.idea
