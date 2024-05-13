@@ -3,4 +3,9 @@ albumentations
 roboflow
 numpy
 ultralytics
-
+pip
+torchmetrics
+torchvision
+numpy
+pandas
+matplotlib
