@@ -1,0 +1,16 @@
+names:
+- Box3G
+- Box4G
+- Box8G
+- BoxB4
+- BoxB8
+nc: 5
+roboflow:
+  license: CC BY 4.0
+  project: counting-rolls
+  url: https://universe.roboflow.com/testsew/counting-rolls/dataset/2
+  version: 2
+  workspace: testsew
+test: ../test/images
+train: counting-rolls-2/train/images
+val: counting-rolls-2/valid/images
