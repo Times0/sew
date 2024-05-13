@@ -15,8 +15,4 @@
 /Box-Counting-*/
 *.mp4
 Only-axis-camera*
-.pt
-\YOLO_ROLLS\counting-rolls-1
-/YOLO_ROLLS/counting-rolls-1
-\YOLO_ROLLS\runs
-/YOLO_ROLLS/runs
+*.pt
