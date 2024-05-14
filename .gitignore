@@ -13,3 +13,5 @@
 /yolov5l6u.pt
 /yolov9c.pt
 /Box-Counting-*/
+*.pt
+data/UsedForCustomScoreTests
