@@ -15,3 +15,6 @@
 /Box-Counting-*/
 *.pt
 data/UsedForCustomScoreTests
+data/UsedForR3
+data/HardTestImages
+v2
