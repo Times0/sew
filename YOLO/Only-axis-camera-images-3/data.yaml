@@ -1,0 +1,16 @@
+names:
+- Box3G
+- Box4G
+- Box8G
+- BoxB4
+- BoxB8
+nc: 5
+roboflow:
+  license: CC BY 4.0
+  project: only-axis-camera-images
+  url: https://universe.roboflow.com/testsew/only-axis-camera-images/dataset/3
+  version: 3
+  workspace: testsew
+test: ./test/images
+train: ./train/images
+val: ./valid/images
