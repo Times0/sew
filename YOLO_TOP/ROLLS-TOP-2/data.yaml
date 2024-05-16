@@ -11,6 +11,6 @@ roboflow:
   url: https://universe.roboflow.com/testsew/rolls-top/dataset/2
   version: 2
   workspace: testsew
-test: ./test/images
-train: ./train/images
-val: ./valid/images
+test: ../test/images
+train: ROLLS-TOP-2/train/images
+val: ROLLS-TOP-2/valid/images
