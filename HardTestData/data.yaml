@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['Box3G', 'Box4G', 'Box8G', 'BoxB4', 'BoxB8']
+
+roboflow:
+  workspace: testsew
+  project: test-images-axis
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/testsew/test-images-axis/dataset/4
