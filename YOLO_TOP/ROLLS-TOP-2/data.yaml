@@ -1,0 +1,16 @@
+names:
+- Roll3G
+- Roll4G
+- Roll8G
+- RollB4
+- RollB8
+nc: 5
+roboflow:
+  license: CC BY 4.0
+  project: rolls-top
+  url: https://universe.roboflow.com/testsew/rolls-top/dataset/2
+  version: 2
+  workspace: testsew
+test: ./test/images
+train: ./train/images
+val: ./valid/images
