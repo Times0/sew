@@ -1,0 +1,24 @@
+'----Best Accuracy-----': ''
+time: '3:00:13.280913'
+early_stopping: 247
+best acc epoch: 104
+best epochs steps: '[0, 2, 3, 4, 5, 6, 7, 33, 36, 41, 75, 104]'
+best val acc: 0.984375
+best acc train loss: 0.20372771978674625
+best acc train acc: 0.8742897727272727
+best acc train mae loss: 0.32474555176767433
+best acc val loss: 0.018916643224656582
+best acc val mae loss: 0.14949596673250198
+'-----Best MAE for Best Accuracy----': ''
+best mae of acc epoch: 104
+best mae of best acc steps: '[0, 3, 6, 7, 33, 36, 41, 75, 104]'
+best mae of best acc: 0.14949596673250198
+'-----Best Round MAE for Best Accuracy----': ''
+best round mae of acc epoch: 104
+best round mae of best acc epochs steps: '[0, 3, 5, 6, 7, 36, 41, 104]'
+best round mae of best acc: 0.015625
+'----Best Round MAE-----': ''
+best round mae epoch: 104
+best round mae epochs steps: '[0, 3, 5, 6, 7, 36, 41, 104]'
+best round mae: 0.015625
+best acc of bes round mae: 0.984375

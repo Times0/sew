@@ -1,0 +1,21 @@
+optimizer: RMSprop
+lr: 0.001
+weight_decay: 0
+epsilon: 1.0e-06
+rho: null
+initial_accumulator_value: null
+betas: null
+max_iter: null
+momentum_decay: null
+alpha: 0
+momentum: 0
+loss_function: Huber
+delta: 3
+imgsz:
+- 224
+- 224
+batch_size: 64
+epochs: 1000
+freeze: false
+earlystop: 200
+dataset: dataset
