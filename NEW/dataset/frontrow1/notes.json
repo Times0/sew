@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "3G"
+    },
+    {
+      "id": 1,
+      "name": "4G"
+    },
+    {
+      "id": 2,
+      "name": "8G"
+    },
+    {
+      "id": 3,
+      "name": "B4"
+    },
+    {
+      "id": 4,
+      "name": "B8"
+    }
+  ],
+  "info": {
+    "year": 2025,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}
