@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['4G', '6G', '8G', 'B4', 'B8']
+
+roboflow:
+  workspace: cilcare
+  project: frontside-3g-4g-8g-b4-b8
+  version: 6
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/cilcare/frontside-3g-4g-8g-b4-b8/dataset/6
